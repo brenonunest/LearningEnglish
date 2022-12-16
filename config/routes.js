@@ -6,7 +6,10 @@ routes.get('/',(req,res) =>{
     res.render('index')
 })
 routes.get('/about',(req,res) =>{
-    res.render('about')
+    res.render('pages/aboutSections/index')
+})
+routes.get('/login',(req,res) =>{
+    res.render('pages/login')
 })
 
 module.exports = routes
