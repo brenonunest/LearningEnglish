@@ -11,5 +11,14 @@ routes.get('/about',(req,res) =>{
 routes.get('/login',(req,res) =>{
     res.render('pages/login')
 })
+routes.get('/botox',(req,res) =>{
+    res.render('pages/botox')
+})
+routes.get('/sculptra',(req,res) =>{
+    res.render('pages/sculptra')
+})
+routes.get('/contato',(req,res) =>{
+    res.render('pages/contato')
+})
 
 module.exports = routes
