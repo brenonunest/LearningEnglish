@@ -1,3 +1,4 @@
+
 /**
 * Template Name: Nova - v1.2.1
 * Template URL: https://bootstrapmade.com/nova-bootstrap-business-template/
@@ -195,3 +196,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+
+
