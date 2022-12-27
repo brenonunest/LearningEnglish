@@ -6,7 +6,19 @@ routes.get('/',(req,res) =>{
     res.render('index')
 })
 routes.get('/about',(req,res) =>{
-    res.render('about')
+    res.render('pages/aboutSections/index')
+})
+routes.get('/login',(req,res) =>{
+    res.render('pages/login')
+})
+routes.get('/botox',(req,res) =>{
+    res.render('pages/botox')
+})
+routes.get('/sculptra',(req,res) =>{
+    res.render('pages/sculptra')
+})
+routes.get('/contato',(req,res) =>{
+    res.render('pages/contato')
 })
 
 module.exports = routes

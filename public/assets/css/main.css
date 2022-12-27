@@ -18,9 +18,9 @@
 
 /* Colors */
 :root {
-  --color-default: #2b180d;
-  --color-primary: #56b8e6;
-  --color-secondary: #1b2f45;
+  --color-default: #8F365E;
+  --color-primary: #A76A78;
+  --color-secondary: #793E4D;
 }
 
 /* Smooth scroll behavior */
@@ -43,7 +43,7 @@ a {
 }
 
 a:hover {
-  color: #82cbed;
+  color: #A76A78;
   text-decoration: none;
 }
 
@@ -108,7 +108,7 @@ section {
 
 .breadcrumbs:before {
   content: "";
-  background-color: rgba(27, 47, 69, 0.7);
+  background-color: #793e4d5f;
   position: absolute;
   inset: 0;
 }
@@ -255,7 +255,7 @@ section {
 }
 
 .header.sticked {
-  background: rgba(27, 47, 69, 0.9);
+  background: #793E4D;
   padding: 12px 0;
 }
 
@@ -319,62 +319,6 @@ section {
   .navbar li:hover>a {
     color: #fff;
   }
-
-  .navbar .dropdown ul {
-    display: block;
-    position: absolute;
-    left: 14px;
-    top: calc(100% + 30px);
-    margin: 0;
-    padding: 10px 0;
-    z-index: 99;
-    opacity: 0;
-    visibility: hidden;
-    background: #fff;
-    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-    transition: 0.2s;
-  }
-
-  .navbar .dropdown ul li {
-    min-width: 200px;
-  }
-
-  .navbar .dropdown ul a {
-    padding: 10px 20px;
-    font-size: 15px;
-    text-transform: none;
-    color: var(--color-secondary);
-  }
-
-  .navbar .dropdown ul a i {
-    font-size: 12px;
-  }
-
-  .navbar .dropdown ul a:hover,
-  .navbar .dropdown ul .active:hover,
-  .navbar .dropdown ul li:hover>a {
-    color: var(--color-primary);
-  }
-
-  .navbar .dropdown:hover>ul {
-    opacity: 1;
-    top: 100%;
-    visibility: visible;
-  }
-
-  .navbar .dropdown .dropdown ul {
-    top: 0;
-    left: calc(100% - 30px);
-    visibility: hidden;
-  }
-
-  .navbar .dropdown .dropdown:hover>ul {
-    opacity: 1;
-    top: 0;
-    left: 100%;
-    visibility: visible;
-  }
-}
 
 @media (min-width: 1280px) and (max-width: 1366px) {
   .navbar .dropdown .dropdown ul {
@@ -526,7 +470,7 @@ section {
 .hero:before {
   position: absolute;
   content: "";
-  background: rgba(27, 47, 69, 0.6);
+  background: #a6989b2d;
   inset: 0;
 }
 
@@ -630,7 +574,7 @@ section {
 }
 
 .why-us .slides {
-  background-color: #f7f9fc;
+  background-color: #a76a781d;
 }
 
 .why-us h3 {
@@ -640,6 +584,12 @@ section {
 }
 
 .why-us h4 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #29486a;
+  font-family: var(--font-secondary);
+}
+.why-us p {
   font-size: 18px;
   font-weight: 400;
   color: #29486a;
@@ -711,7 +661,7 @@ section {
 
 .about .content p {
   margin: 30px 0;
-  color: #29486a;
+  color: #793E4D;
 }
 
 .about .content ul {
@@ -771,7 +721,7 @@ section {
 # Call To Action Section
 --------------------------------------------------------------*/
 .call-to-action {
-  background: linear-gradient(rgba(27, 47, 69, 0.8), rgba(27, 47, 69, 0.8)), url("../img/calltoaction.png") center center;
+  background: linear-gradient(#793e4d38, #a76a7816), url("../img/calltoaction.png") center center;
   background-size: cover;
   padding: 100px 0;
 }
@@ -973,84 +923,6 @@ section {
   transform: scale(1.1);
 }
 
-/*--------------------------------------------------------------
-# Team Section
---------------------------------------------------------------*/
-.team .team-member {
-  overflow: hidden;
-  background: #fff;
-}
-
-.team .team-member .member-img {
-  position: relative;
-  overflow: hidden;
-}
-
-.team .team-member .social {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  height: 40px;
-  opacity: 0;
-  transition: ease-in-out 0.3s;
-  background: rgba(255, 255, 255, 0.85);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.team .team-member .social a {
-  transition: color 0.3s;
-  color: #31547c;
-  margin: 0 10px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.team .team-member .social a i {
-  line-height: 0;
-}
-
-.team .team-member .social a:hover {
-  color: var(--color-primary);
-}
-
-.team .team-member .social i {
-  font-size: 18px;
-  margin: 0 2px;
-}
-
-.team .team-member .member-info {
-  padding: 25px 15px 0 15px;
-  text-align: center;
-}
-
-.team .team-member .member-info h4 {
-  font-weight: 700;
-  margin-bottom: 5px;
-  font-size: 18px;
-  color: var(--color-secondary);
-}
-
-.team .team-member .member-info span {
-  display: block;
-  font-size: 13px;
-  font-weight: 400;
-  color: #6c757d;
-}
-
-.team .team-member .member-info p {
-  font-style: italic;
-  font-size: 14px;
-  line-height: 26px;
-  color: #6c757d;
-}
-
-.team .team-member:hover .social {
-  opacity: 1;
-}
 
 /*--------------------------------------------------------------
 # Services Cards Section
@@ -2133,7 +2005,8 @@ section {
 .footer .footer-content h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #29486a;
+  color: var(--color-secondary);
+
   position: relative;
   padding-bottom: 12px;
 }
@@ -2150,7 +2023,7 @@ section {
 
 .footer .footer-content .footer-links ul i {
   margin-right: 2px;
-  color: var(--color-primary);
+  color: #29486a;
   font-size: 16px;
   line-height: 0;
 }
@@ -2166,7 +2039,7 @@ section {
 }
 
 .footer .footer-content .footer-links ul a {
-  color: #31547c;
+  color: #29486a;
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
@@ -2178,7 +2051,7 @@ section {
 
 .footer .footer-content .footer-contact p {
   line-height: 26px;
-  color: var(--color-secondary);
+  color: #29486a;
 }
 
 .footer .footer-legal {
